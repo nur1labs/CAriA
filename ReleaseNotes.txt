@@ -1,0 +1,803 @@
+Release notes 3.0
+
+- upload to github
+- added change for files
+- reset work
+
+Release notes 3.0.1
+
+- change cores
+- update setting
+- update rpc and blockindicies
+- added checkpoint
+  a. checkpoint cores
+  b. checkpoint payment_gate
+
+Release notes 3.0.2
+
+- checpoint added
+  - recover lost checkpoint
+  - updates new chain run and simple
+  - fixed chain
+- checkpoint 6/4/2018
+  - improve chain
+  - wallet log
+- checkpoint 6/5/2018
+  - added log
+  - improve wallet
+  - remove unecessary file
+
+Release notes 3.0.3
+
+- checkpoint 6/6/2018
+  - update transfer
+  - fixed update for autoremove transaction chain
+  - faster block
+
+- checkpoint 6/9/2018
+  - improve wallet from bytecoin models
+  - crypto patch from karbo
+  - upgrade core system with PoS and MN support
+
+Release notes 3.0.4
+
+- checkpoint 6/14/2018
+  - improve hash cores
+  - improve masternodes
+  - improve PoS
+  - super nodes increase rpc value
+  - remotes checkpoint
+  - dust test transaction
+  - long hash stop for solo on SN[Super Nodes][like gpu solos]
+  - block point added
+  - parent block fixed
+  - added confirmation log rpc
+  - security increases
+  - android support
+
+- checkpoint 6/15/2018
+  - revert work to checkpoint date 13
+  - ignore aliases bug
+  - ignore passwork on simple_wallet cuz bug on address
+  - made checkpoint today 12:00 pm
+
+- checkpoint 6/16/2018
+  - fixed alias as bug. removed!
+  - revert to old checkpoint. upgrade checkpoint level
+  - new string on daemon
+  - android fixed
+
+- checkpoint 6/17/2018
+  - cross chain added
+  - fixed old wallet bug
+  - backup fixed
+  - fixed alias by move to android
+
+Release notes 3.0.5
+
+- checkpoint 6/19/2018
+  - added merchant wallet[building]
+  - added masternodes wallet[building]
+  - fixed nice hash attack
+  - alternative chain fixed
+
+- checkpoint 6/20/2018
+  - transaction id fixed
+  - fixed bug from loop diff
+
+- checkpoint 6/21/2018
+  - fixed pool transaction
+  - fixed diff
+  - fixed merge mining
+  - wallet sync fixed
+  - revert back merge mining to currency
+
+- checkpoint 6/22/2018
+  - fixed mem-pool faster
+  - added ban for mempool
+  - added print ban
+
+Release notes 3.0.6
+
+- checkpoint 6/24/2018
+  - implemeted LWMA-2 version fixed
+  - upgrade to for new major block 5
+  - fixed bug and remove LWMA-1 trace
+
+- checkpoint 6/25/2018
+  - tidy structure
+  - added on transaction
+  - added max mixin
+  - fixed cores transaction
+  - fixed fusion + fee transaction
+  - block chain faster
+  - add top block hash
+  - fixed gui build
+  - add lite wallet build
+  - rename class to new version
+
+- checkpoint 6/26/2018
+  - add doxyfile by homdx
+  - fixed capitalize 0 or o
+  - welcome to homdx
+  - added gui
+
+- checkpoint 6/27/2018
+  - added rpc auth
+  - added block fee by niobio[disable and enable feature]
+  - fixed some minor bug
+  - pool size using command line
+  - remove annoyed  tx verification failed messages
+  - remove double name testnet prefix
+  - Reduce log messages on pushing block
+
+Release notes 3.0.7
+
+- checkpoint 6/28/2018
+  - implemented heavy
+  - better pow call
+  - password fixed
+  - fixed slow hash
+  - add The Niobio Developer as contibutor list
+  - The Italo Developer as contibutor list
+  - fixed major bug on heavy
+  - get_payments method now returns confirmations
+
+- checkpoint 6/30/2018
+  - some rest and idle fixed
+
+- checkpoint 7/1/2018
+  - upgrading platform
+  - code improved
+
+Release notes 3.0.8
+
+- checkpoint 7/2/2018
+  - code upgrade
+  - dynamic modular integrated
+  - minor breaker
+  - updates some string
+  - updates blockchain rules
+  - updates modular
+
+- checkpoint 7/3/2018
+  - enable slow reward and slow miner
+  - fixed minor bugs
+
+- checkpoint 7/4/2018
+  - masternodes implemented
+  - bug fixed major
+
+- checkpoint 7/6/2018
+  - fixed some bug masternodes
+
+- checkpoint 7/7/2018
+  - added validate address
+  - added new cells
+
+- checkpoint 7/9/2018
+  - added split cell[4]
+
+- checkpoint 7/16/2018
+  - minor fixed
+
+- checkpoint 7/17/2018
+  - minor fixed
+
+Release notes 3.0.9
+
+- checkpoint 7/18/2018
+  - updates core
+  - change structure
+  - fixed cells
+
+Release notes 4.0.x
+
+- checkpoint 7/28/2018
+  - change platform
+  - Enable point of sales
+  - Enable Minting
+  - Enable supernodes
+  - Fee controls
+  - New Platform
+  - Dns Auto Fixed
+  - Generate reward by random difficulty
+
+- checkpoint 7/29/2018
+  - fatal coin orphan fixed
+  - difficulty control
+  - tokens is not overloaded
+  - minting check and control reward fixed
+  
+- checkpoint 8/3/2018
+  - fixed genesis block
+  - platform rebuilding
+  - fixed seed
+  - hardcode genesis
+  - emercoin fork finish
+  - emer seed remove
+
+- checkpoint 8/4/2018
+  - dns emer sync with labs
+  - bitcoin code merge zEtA platform
+  - consesus updates fork emercoin 8/3/2018
+  - prepare zEtA files
+  - consesus updates fork emercoin 8/4/2018
+
+- checkpoint 8/8/2018
+  - remove emercoin hash
+  - branding
+  - masternodes
+  - fixed some brand
+  - issue chain conflict dash fixed
+  - updates bignum fixed by emercoin developer and peer developer
+
+- checkpoint 8/11/2018
+  - mining rpc fixed by emercoin
+  - rpc reading stake by emercoin
+
+- checkpoint 8/13/2018
+  - updates gui final
+  - fixed gui and remove prefix
+  - tags remove updates code cores
+
+Release notes 4.2.x
+
+- checkpoint 8/15/2018
+  - updates segwit 8
+  - restructure AriA
+  - cores code revert
+  - gui fixed
+  - AriA connector[struct]
+  - BarkleyDB 6.x support
+
+- checkpoint 8/20/2018
+  - build 2 system integrated
+  - fix rpcmining/getblocktemplate univalue transition logic error[condominium by pivx]
+  - add getfeeinfo RPC[condominium by pivx]
+  - [RPC] add setban/listbanned/clearbanned RPC Commands[condominium by pivx]
+  - add disconnectnode RPC command[condominium by pivx]
+  - introduce banlist.dat to store the ban list across restarts[condominium by pivx]
+  - introduce CScheduler lightweight task scheduler[condominium by pivx]
+  - fix `importzercoins` for use with UniValue[condominium by pivx]
+  - [RPC] implement random-cookie based authentication[condominium by pivx]
+  - findserial RPC[condominium by pivx]
+  - return change to sender when minting[condominium by pivx]
+  - little branding
+
+- checkpoint 8/23/2018
+  - rebuild script
+  - added getinfo and banlist
+  - banlist on disk
+  - scheduler
+  - tweak scheduler
+  - find serial rpc
+  - return change to sender when minting zAR
+  - change mask to bits
+  - refactor node banning functions 
+  - remove potentional memory leak, update multisend code
+  - moved wallet balance computation from header to source file
+  - fix a bug where autocombinerewards was generating too big TXs
+  - backport of
+  - factor out function ComputeTimeSmart for TXs
+  - some tweak on gui
+
+- checkpoint 8/24/2018
+  - updates some checkpoint
+  - rebase
+  - clear PrivacyDialog labels after sending
+  - change seed ip
+  - added key xat
+  - change seed
+  - updates reward
+  - change res
+  - checkpoint chain map
+
+-  checkpoint 8/25/2018
+  - make toobar icons bigger
+  - clear selected peer when switching away from peers tab in RPC console
+  - consistent trx colors for Overview + Transaction tabs
+  - introduce and hook up the bantablemodel
+  - [Build] compile/link winshutdownmonitor.cpp on Windows only
+  - rework of overview page
+  - moved wallet balance computation from header to source file
+  - fixed dynamic screen elements issue
+  - add labels to multiSend GUI
+  - send popup simplified + SwiftTX -> SwiftX
+  - avoid UTXO-split send message addition
+  - consensus change reward prefent dump
+  - change icon
+  - clean masternodes
+  - remove masternodes on gui
+
+- checkpoint 8/26/2018
+  - updates gui full fixed
+  - no masternodes options
+
+- checkpoint 8/27/2018
+  - [ui]fix paymentservertests.cpp to use automatic buffer overflow protection
+  - [ui]autoscroll to end of zAR status output
+  - [all]unlock description in GUI and CLI
+  - [src]fix masternode broadcast for networks != MAINNET
+  - [src]autocombineDust is called less often
+  - [ui]remove duplicate code. Create updateAddressBookLabels function
+  - [src]increase fee margin to up to 10% of autocombine send
+  - [all]libevent-based httpd server
+  - [src]update REST interface to allow for more query pathways
+  - [src]make getblockheader RPC return more information
+  - [all]tweaking codes
+  - [src]move windows socket init to utility function
+  - [src]get rid of DetectShutdownThread
+  - [src]normalize spacing in rpcprotocol.h
+  - [src]init: Ignore SIGPIPE
+  - [src]init: add new debug categories
+  - [ui]adjust Qt RPC console for new evhttpd server
+  - [src]prepare to detach rpcserver from main.h dependency
+  - [doc]update contrib manpage/example files
+  - [src]fix wallet repair restart exception
+  - [src]combine change to output wallet
+
+- checkpoint 8/28/2018
+  - [ui]fix crash when inputting wrong port for network proxy
+  - [all]additional proxy checks in options-dialog
+  - [src]add blocksizenotify command
+  - [src]switch from local to main signals
+  - [src]give high priority to zerocoinspends to make it into the next block
+  - [src]fix autocombine
+  - [ui]remove Growl support
+  - [all]update build system from upstream
+  - [all]little tweaking
+
+- checkpoint 8/29/2018
+  - [src]use and define `strnlen` if not already defined
+  - [all]mac: update macdeployqtplus and Info.plist.in
+  - [all]build: deduplicate version numbers
+  - [doc]osx build notes: libzmq -> zmq in brew install, add libevent
+  - [ui]refactor layouts for BIP38/Privacy/SendCoinsEntry/SVM
+  - [ui]add a paste button to BIP38's decrypt tab
+  - [ui]remove instances of empty `placeholderText` properties
+  - [ui]BIP38 - return decrypted privkey in WIF format
+  - [ui]use QToolButton for utility buttons in MultiSig UI
+  - [ui]make Multisend's past button a QToolButton
+  - [ui]fix warning dialog popup for the Blockchain Explorer
+  - [src]remove vfReachable and modify IsReachable to only use vfLimited
+  - [src]refactor ConnectBlock() to segregate state
+  - [src]allow rpc listunspent to have options for watchonly transactions
+  - [src]segfault aria-cli getinfo while loading block index
+  - [src]add debug info for CWallet::ReconsiderZerocoins()
+  - [ui]make "For anonymization and staking only" checked by default
+  - [src]change git info in genbuild.sh
+  - [ui]remove Gitan-OSX warning for High Sierra builds
+  - [src]segfault with -enableswifttx=0 / -enableswifttx=false
+  - [src]remove masternodes console
+
+- checkpoint 8/30/2018
+  - [src]add argument to mint zerocoin from specific UTXO
+  - [all]increase valid range for automint percentage
+  - [ui]add automint status bar icon
+  - [ui]connect automint icon to the UI automint setting change
+  - [ui]tweaking bug of bar
+  - [ui]automint integrated
+
+- checkpoint 8/31/2018
+  - [all]hardfork depends from emercoin
+  - [all]prefix some bugs
+  
+- checkpoint 9/2/2018
+  - [src]remove help rpc masternodes
+  - [src]add a check on zAR spend to avoid a segfault
+  - [src]tweaking wallet
+  - [ui]update privacy tab info about zeromint on config change
+  - [doc]instructions on how to make the Homebrew OpenSSL headers visible
+  - [all]refresh zAR balance after resetting mints or spends
+  - [all]Staking zAR
+  - [src]add libzerocoin::SpendType enum
+  - [src]V2 zAR must have serials that have the 1st byte as 00
+  - [src]change to using first nibble as 0xF for v2 serial mark
+  - [src]switch to a new accumulator with the correct modulus
+  - [all]consensus break
+  - [all]split up chain
+  - [src]change version static
+  - [src]validate that the correct spend type
+  - [src] updates zeroparams lv2
+
+- checkpoint 9/6/2018
+  - [src]change zAR stake to use serial hash
+  - [src]tweak accumulator
+
+- checkpoint 9/9/2018
+  - [src]add description for -ariastake= and -zariastake=
+  - [src]make RPC export/import zerocoins compatible with v2
+  - [src]update ActiveProtocol for 70913 protocol version
+  - [src]add missing variable to 2 AvailableCoins() calls
+  - [src]fix coinbase check. Add override specifiers. Proper init for SetDec
+  - [src]bump new protocol
+
+- checkpoint 9/12/2018
+  - [src]change finalization collateral[masternodes not used more][catalyst collateral]
+  - [src]implemented masternode_broadcast[masternodes not used more][catalyst collateral]
+  - [src]consensus limit PoW 300k
+
+- checkpoint 9/13/2018
+  - [crc]add for sample circle-cli
+  - [src]broke up the RPC commands in create/decode/relay
+  - [src]tweak rpc
+
+- checkpoint 9/15/2018
+  - [src]factor out GetStrMessage() - define MIN_PEER_MNANNOUNCE[catalyst collateral]
+  - [src]use error() instead of LogPrintf()
+  - [src]style Changes[catalyst collateral]
+  - [src]add new spork key and handling logic[catalyst collateral]
+  - [src]use GetTime() for nStartupTime
+  - [all]remove the dev_qt
+  - [src]clean up lockorder data of destroyed mutexes
+  - [src]clean up apparent locking issues
+  - [crc]clean job
+
+- checkpoint 9/16/2018
+  - [src]remove private ip on master seed
+
+- checkpoint 9/17/2018
+  - [src]add missing files to src/Makefile.am
+  - [src]load mint version based on serial parsing
+  - [src]new seed + removes unsed as private
+
+- checkpoint 9/20/2018
+  - [all]tweaking some updates + change rebase fork
+  - [ui]backup windows form
+  - [doc]add the category function
+
+- checkpoint 9/21/2018
+  - [ui]disable zerocoin[cause reading masternodes]
+  - [src]fix spork command input length[masternodes]
+  - [ui]show correct data for MN reward on a zAR stake block[masternodes]
+  - [src]stop removing spent zAR hashes from map[zerocoin]
+  - [ui]fix zAR stake transaction record[zerocoin]
+  - [src]GetOldStrMessage() / GetNewStrMessage(): check against both[masternodes]
+  - [src]sign "old" strMessage before nBlockZerocoinV2
+  - [src]fix zAR mint databasing
+  - [src]tweak of zAR[final consensus break. no turn checkpoint]
+
+- checkpoint 9/24/2018
+  - [git]updates for automatic cross install
+  - [src]add checkpoints
+
+- checkpoint 9/25/2018
+  - [doc]change oldaria to rebase and made devices function on src
+
+- checkpoint 9/26/2018
+  - [src]finalization fixes[mastenodes]
+  - [all]Working model for deterministic zAR
+
+- checkpoint 9/28/2018
+  - [src]move plugin for no injection script/used for install only
+
+- checkpoint 9/29/2018
+  - [src]Add zARTracker
+  - [ui]change AriA-Connect Version
+
+- checkpoint 9/30/2018
+  - [crc]remove the coins folder
+
+- checkpoint 10/1/2018
+  - [src]HardFork Fruit
+  - [doc]add codacy badge
+  - [doc]change up readme
+
+- checkpoint 10/2/2018
+  - [src]tweak some code
+  - [src]encrypt plugin folder[prevent leaked security.when install only]
+  - [src]rebase no need the plugin
+  - [src]unused py test and main
+  - [src]remove unused test univalue
+  
+- checkpoint 10/3/2018
+  - [src]update and repack univalue[version updates 1.0.4]
+  - [src]fix all plugin archive potential inject code move
+  - [src]arrange rebase and newaria of plugin
+  
+- checkpoint 10/4/2018
+  - [src]arrange for easy install
+  - [src]tweak make bug.revert
+  - [src]short description files & some tweak
+
+- checkpoint 10/5/2018
+  - [src]repack rebase & HF BVOne
+  - [src]checkpoint BVOne
+  - [ui]tweak
+
+- checkpoint 10/10/2018
+  - [src]rebranding system tweak by labs self
+  - [src]database mints generated by the mintpool
+  - [src]do not database zerocoinmint too early
+  - [src]check for existence of zAriATracker in ListMintedCoins()
+  - [src]use unique databasing for dzAriA and do not database private info
+  - [ui]use unique databasing for dzAriA and do not database private info
+
+- checkpoint 10/13/2018
+  - [all]fixed plugin for auto install
+
+- checkpoint 10/15/2018
+  - [src]checkpoint bvone to aria
+  - [ui]redefault refreshed models
+
+- checkpoint 10/19/2018
+  - [src]change autogen.sh
+
+- checkpoint 10/23/2018
+  - [crc]slim points
+  - [src]split base with LightFork
+  - [crc]remove upgrades
+  - [crc]change stretch to jessie[compability of circleci]
+  - [src]light fork no need new directory
+  - [ui]fix zAR transactions details
+  - [crc]change to base
+  - [src]guard against a segfault in serialization
+  - [src]try make not fatal
+
+- checkpoint 10/24/2018
+  - [crc]enable test
+  - [src]archive test py
+  - [ui]sync qt and connect updates
+
+- checkpoint 11/7/2018
+  - [src]made build PID - ChinoFork
+
+- checkpoint 11/20/2018
+  - [doc]add key, json, dep
+  - [crc]change up
+
+- checkpoint 11/21/2018
+  - [src]secure sph exploits
+
+- checkpoint 11/29/2018
+  - [src]updates bump to v4.2.11
+  - [src]added rsa
+
+- checkpoint 1/7/2019
+  - [all][system]rebase & upgrade
+  - [ui][system]remove z protocol
+  - [src][subsystem]upgraded masternodes systems
+
+- checkpoint 1/10/2019
+  - [src]tweak some security layer. input double layer
+
+Release notes 4.3.x
+
+- checkpoint 1/16/2019
+  - [all][system][subsystem]remodel system key and remodel spork for subsystem masternodes
+
+- checkpoint 1/20/2019
+  - [all][system][subsystem]rebase model for MN[subsystem] split with non-MN[system]
+  - [ui]remove unsed on mnside
+
+- checkpoint 1/22/2019
+  - [all]Zero Project
+  - [src]makefile update for Zero Project
+  - [src]tweak masternodes Zero Project
+  - [src]tweak obfuscation Zero Project
+  - [src]tweak rpc Zero Project
+
+- checkpoint 1/23/2019
+  - [src]tweaking of src Zero Project
+  - [src]tweak compat,compat,script,zmq Zero Project
+  - [src]tweak test Zero Project
+  - [dep]Framework MuBdI and Rebase AriA
+  - [dep]ready for Zero Project to test
+  - [dep]ready for Zero Project to fixed some dep
+  - [dep]ready for Zero Project to fixed cd
+  - [dep]ready for Zero Project to depends
+  - [dep]ready for Zero Project to base
+  - [dep]ready for Zero Project to src0
+  - [dep]ready for Zero Project to makefile
+  - [dep]ready for Zero Project to NoQT
+  - [dep]ready for Zero Project to push ui
+  - [dep]ready for Zero Project to wrong daemon
+  - [dep]ready for Zero Project to update HMM
+  - [dep]ready for Zero Project to fixed total
+  - [crc]ready for Zero Project to CircleCI
+
+- checkpoint 1/24/2019
+  - [dep]ready for Zero Project to Clone new Libevent
+  - [src]Updates MuBdI & AriA Platform
+  - [src]Zero Project - Updates Plugin MuBdI
+  - [ui]Zero Project - Updates Plugin MuBdI
+  
+- checkpoint 1/26/2019
+  - [ui]Zero Project - Updates Core UI
+  - [ui]Zero Project - remove useless ui
+  - [ui]Zero Project - Fixed Rebrace
+  - [ui]Zero Project - remove connect
+  - [src]Welcome To MuBdI Platform
+  - [src]updates for Imanity
+  - [src]MuBdI Hardcode for Imanity System
+  - [src]MuBdI Hardcode for AriA System
+  - [src]MuBdI remove old code 
+  - [key]MuBdI remove old key
+  - [src]configure change
+  - [ui]Zero Project - MuBdI tweak QT
+  
+- checkpoint 2/5/2019
+  - [all]rebase core fixed
+  - [ui]disable zero protocol core from ui
+  - [all]remove aria platform
+
+Release notes 4.4.x
+
+- checkpoint 2/11/2019
+  - [all]Zero Project-Upgrade Core
+  - [all]Zero Project-Update Keyhash
+  - [all]Zero Project-AddShieldRPC
+  - [all]Zero Project-Update Protocol Shield
+  - [all]Zero Project-Wallet Shield Add
+  - [all]Zero Project-Splash on stop server
+  - [all]Zero Project-Featured Bridge
+  - [all]Zero Project-Shield Protect update
+  - [all]Zero Project-Tweak willcard
+  - [all]Zero Project-Tweak Testnet
+  - [key]update protocol
+
+Release notes 4.5.x
+
+- checkpoint 2/17/2019
+  - [all]Zero Project - Rebase
+  - [src]Zero Project - Fixed Util
+  - [src]Zero Project - Open Testnet
+  - [src]Zero Project - Updates Genesis
+  - [src]Zero Project - Update Bugs Cli
+  - [src]Zero Project - Build Rebase
+  - [src]Zero Project - Build Rebase -Fixed
+  - [src]Zero Project - Disable GUI
+  - [src]Zero Project - Genesis Added
+  - [src]Zero Project - rebase
+  - [src]Zero Project - Update Blocksign
+  - [src]Zero Project - Coins update
+  - [src]Zero Project - Crypt
+  - [src]Zero Project - Main
+  - [src]Zero Project - MN updates
+  - [src]Zero Project - Lock
+  - [src]Zero Project - RPC updates
+  - [src]Zero Project - Fixed some Bugs obs
+  - [src]Zero Project - Wallet Update
+  - [dep]Zero Project - Prepare Compilet
+  - [src]Zero Project - Plugin Update
+  - [dep]Zero Project - New LibShield
+  - [src]Zero Project - Test Uploaded
+  - [ui]Zero Project - New UI
+  - [src]Zero Project - Update Resource
+  - [all]Zero Project - Updates Core
+  - [src]Zero Project - Porting Fixed
+  - [all]Zero Project - Updates Main Network
+  - [all]Zero Project - Updates Testnet Network
+
+- checkpoint 3/3/2019
+  - [all]made checkpoint for rebase and remove old tags
+  - [all]have disable and enable masternodes
+
+- checkpoint 4/18/2019
+  - [src]removed hash post-skip
+  - [src]update kernel of chain
+  - [src]upgrade installer and used newer db
+  - [src]upgraded structure bump to fork 3
+  - [src]CN[central nodes] active
+  - [src]split dark fork and light fork
+  - [src]dump nodes limiter
+
+- checkpoint 4/19/2019
+  - [dep]fixed installer remove unwork script
+
+- checkpoint 5/31/2019
+  - [all]rebuilding core
+  - [src]added fork
+  - [dep]updates installer and split type nodes
+  - [db]removed old db and used compability new db
+  - [src]locking points for unknow chain inject
+  - [ui]disable cross no id
+
+- checkpoint 6/7/2019
+  - [dep]add new repair
+  - [src]added no_mine script[token only]
+  - [src]updates for main major script
+
+- checkpoint 6/15/2019
+  - [dkr]added docker files
+  - [all]tweak docker
+  - added pgp key
+  
+- checkpoint 6/25/2019
+  - [src]dark protocol split
+  - [src]tweak main code
+  - [ui]added signature UI
+  
+- checkpoint 6/27/2019
+  - [src]made split protocol dark and version-2
+  
+- checkpoint 6/28/2019
+  - [dep]system upgraded and auto configure for new database and lib-ssl
+  - [src]token protocol split from main
+  - [src]change zAR stake to use serial hash
+  
+- checkpoint 6/29/2019
+  - [src]add description for -arstake= and -zarstake=
+  - [src]make RPC export/import dark_protocols compatible with v2
+  - [src]update ActiveProtocol for 70913 protocol version
+  - [src]add missing variable to 2 AvailableCoins() calls
+  - [ui]remove the dark from ui[tags needed who wanna used]
+  
+- checkpoint 6/30/2019
+  - [src]fix coinbase check. Add override specifiers. Proper init for SetDec
+  - [src][Budget]change finalization collateral to 5 MuBdI
+  - [src]change Masternode mess. format (fix signatures) - bump PROTOCOL_VERSION
+  - [src]implemented masternode_broadcast
+  
+- checkpoint 7/5/2019
+  - [src]broke up the RPC commands in create/decode/relay
+  - [src]factor out GetStrMessage() - define MIN_PEER_MNANNOUNCE
+  - [src]use error() instead of LogPrintf()
+  - [src][P2P] add new spork key and handling logic
+  - [src][Wallet] use GetTime() for nStartupTime
+  - [src]clean up lockorder data of destroyed mutexes
+  - [src]clean up apparent locking issues
+  - [src]load mint version based on serial parsing
+  - [ui]show correct data for MN reward on a zAR stake block
+  - [ui]fix zAR stake transaction record
+  - [src]GetOldStrMessage() / GetNewStrMessage(): check against both
+  - [src]sign "old" strMessage before nBlockDarkV2
+  - [src]minor style change
+  - [src]fix zAR mint databasing
+  - [src][Budget] finalization fixes
+  
+- checkpoint 7/10/2019
+  - [src]Working model for deterministic zAR
+  
+- checkpoint 7/13/2019
+  - [crc]updates circle[reused]
+  
+- checkpoint 7/16/2019
+  - [src]Add zMuBdITracker
+  - [src]Database mints generated by the mintpool
+  - [src]Do not database zerocoinmint too early
+  - [scr]Check for existence of zMuBdITracker in ListMintedCoins()
+  
+- checkpoint 7/23/2019
+  - [src]Use unique databasing for dzaria and do not database private info
+  - [src]tweak base speed of light protocol
+  - [ui]Fix zMuBdI transactions details
+  - [src]Guard against a segfault in serialization
+  - [ui]Update GUI depending on SPORK_16 without restart
+  - [src]Fix MintableCoins and fMintableCoins
+  - [src]Fix GetImmatureZerocoinBalance
+  - [src]Guard CInv::ToString against unknown types
+  - [all]Fix parsing of QT transaction records on fresh import of seed
+  - [src]Remove AddToWallet() from miner.cpp
+  - [src]Remove uneeded lock on createcoinstake()
+  
+- checkpoint 7/26/2019
+  - [src]Make zMuBdI wallet consistently use nCount as the last count used
+  - [src]Make sure mints are added to zerocoinDB even when it is a zcspend
+  - [src]Add -reindexzerocoin arg to wipe zerocoindb and reindex blockchain
+  - [ui]Fix mature zMuBdI balance calculation
+  - [src]Don't exit early in ReconsiderZerocoins
+  - [src]Fix timing inconsistency with mature/unconfirmed zMuBdI balances
+  - [src]Load only the mintpool for the current seed, prevent the generation
+  - [src]Fix MintPool logprint
+  - [src]Do not try to add all zMuBdI stakes on init
+  - [ui]Fix QT transaction record when staking zMuBdI that was not deterministic
+  - [src]zMuBdITracker better check for orphans. Also no redundant adding wtx's
+  - [sec]Remove balance check from CreateCoinStake()
+  - [src]Use correct params for spend when checking serial in miner
+  - [src]Fix checking if mint is in chain
+  - [ui]Properly set involvesWatchAddress in the transaction record
+  - [ui]Fix mn reward showing as zMuBdI stake
+  - [ui]Fix normal MuBdI transaction record amount
+  - [src]Fix compilation on windows
+  
+- checkpoint 8/12/2019
+  - [all]Encryption of zar seeds
+  - [ui]Fix another instance of a wayward eye
+  - [src][Budget] Add debug to find 'Couldn't find opReturn' error
+  - [src][Budget] Fix 'Couldn't find opReturn' error 1
+  - [src][Budget] Remove obsolete finalized budgets + better debug info
+  - [src][Budget] Add debug info to CBudgetManager::IsTransactionValid()
+  - [src][Budget] Add debug info to CFinalizedBudget::IsTransactionValid()
+  - [src]Mark orphan zMuBdI stake input as not used
