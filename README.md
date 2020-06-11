@@ -1,15 +1,29 @@
-MuBdI-Artificial Life System Build For Blockchain
+MuBdI Platform-Artificial Life System Build For Blockchain
 =====================================
 ![Settings Window](http://nur1labs.net/images/mubdibase.png)
+[![CircleCI](https://circleci.com/bb/nur1labs/mubdi.svg?style=svg)](https://circleci.com/bb/nur1labs/mubdi)
 
 MuBdI is Platform Blockchain for QaWiYyu.Desclaimer note. After Consensus we herby make split aria-tokenizer and aria self. Cause distribute scammer. Auditing stop
 make tokenizer aria is stop listing project on 20th January, 2019. And total stop services and do swap to AriA[Public] or Imanity[Private] And MuBdI as official new platform at 25th January, 2019
 
+MuBdI signed on new Fork(commited 07466c3) as Dirham/Dinar trace make USD is more bad way system since general viruses comes Covid-19. And make gold, Dirham and Dinar as alternative. 
+while AriA care for this time to put cold storage wallet. And as used based continental from dubai community agreement number 15(committed 81e71b3).
+It's called "from ummah to ummah". or people to people. Make MuBdI signal for whole fiat enemy and e-wallet based bank resides.
+
 there is directory tree below : 
 
-1. featured : place updates core engine aria[all stuff there like key, hash and consensus]
-3. src : code base for AriA like devices core to wallet[no need soon as we have many repos]. Here HardFork settings too.
-5. .circleci : this for expert of the core developer only
+1. archived : place updates Core MuBdI Engine[all stuff there like key, hash and consensus].
+3. base : code base for MuBdI like devices core to wallet[no need soon as we have many repos]. here HardFork settings too.
+5. .circleci : this for expert of the core developer only.
+
+listed nodes developement tags(nametag_install.sh).
+
+1. cn = core nodes. for main cores system install.
+2. wn = mainly for wallet nodes.
+3. mn = masternodes only.
+4. en = for exchanger nodes.
+5. tn = testing nodes. for test nodes only.
+6. rn = rebuild nodes. easily upgraded nodes.
 
 # DEVELOPMENT TAGS ##
 
@@ -18,22 +32,26 @@ tags is list for easy what we change. so make sure that arrange.
 | DEVTAG | README                                        |
 | ------ | --------------------------------------------- |
 | all    | all sources + QT + db + anything inside cores |
-| src    | change for sources not QT or anything cores   |
-| ui     | qt not source or anything                     |
-| web    | web based                                     |
 | cdc    | codacy integrated                             |
-| crc    | circleci integrated                           |
-| doc    | documents                                     |
 | con    | consoles like android, iphone, raspi,etc      |
-| git    | gitian builder                                |
-| host   | connect to host system                        |
-| key    | for auditing key system			             |
-| njs    | for nodejs and javascript updates             |
-| dep    | for all deployment install                    |
-| rsa    | for rsa key                                   |
-| sec    | for security purpose                          |
+| crc    | circleci integrated                           |
 | db     | for db purpose                                |
 | dkr    | for docker purpose and virtuality system      |
+| doc    | documents                                     |
+| host   | connect to host system                        |
+| key    | for auditing key system			             |
+| lang   | for language tags    			             |
+| net    | for network and protocols		             |
+| njs    | for nodejs and javascript updates             |
+| nod    | for all node deployment install               |
+| plu    | plugins and rebased                           |
+| rpt    | for report db system  					     |
+| rsa    | for rsa key                                   |
+| sec    | for security purpose                          |
+| src    | change for core sources not QT                |
+| sql    | sql scripting system							 |
+| ui     | qt not source                                 |
+| web    | web based                                     |
 
 New Tags Roles :
 
@@ -61,7 +79,7 @@ ProtocolV2 : [Masternodes] [Dark]
 
 # License ##
 
-Copyright (c) 2010-2019, Nur1labs
+Copyright (c) 2010-2020, Nur1labs
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
