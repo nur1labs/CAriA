@@ -1449,3 +1449,53 @@ Release Notes v4.9.x - LigHt Angel
   - [src]remove zerocoin[accumulatormap]
   - [src]remove zerocoin[accumulators]
   - [all]bump v4.9.1.3 - remove zmub directory
+  
+- checkpoint 20 Syawal 1441 H
+  - [src]remove accumulator[zlib]
+  - [src]remove coinspend[zlib]
+  - [src]remove accumulatorpok[zlib]
+  - [src]remove serialnumbersok[zlib]
+  - [src]remove denominations[zlib]
+  - [src]remove zerocoindefines[zlib]
+  - [src]remove spendtype[zlib]
+  
+- checkpoint 21 Syawal 1441 H
+  - [src]remove params[zlib]
+  - [src]remove commitment[zlib]
+  - [src]remove paramgeneration[zlib]
+  - [src]fixed test
+  - [all]bump v4.9.2 - remove zmub library
+  - [src]Reinitialize state in between individual unit tests
+  - [src]tests: add a BasicTestingSetup and apply to all tests
+  - [src][Log] Handle errors during log message formatting
+  - [src]Creates unittests for addrman, makes addrman testable
+  - [src]Increase test coverage for addrman and addrinfo
+  - [src][Code Style] Remove std namespace in test file
+  - [src][Consensus] spork 15 activation + protocol version bump
+  - [all]bump v4.9.3 - New Protocol
+  
+- checkpoint 23 Syawal 1441 H
+  - [ui]remove privacydialog
+  - [src]remove buildenv
+  - [nod][Build] Clean all coverage files during make clean
+  - [src]fixed addrman_test
+  - [nod][Build] Initial CMake support
+  - [src]depends: Update from upstream
+  - [src]Don't assert if we were beaten to the block
+  - [src][Backport] Max tip age to consider a node in IBD status
+  - [ui]tweaking & fixed bug
+  - [src]fixed test
+  - [all]bump v4.9.4 - Fixed QT
+ 
+- checkpoint 24 Syawal 1441 H 
+  - [src][RPC] fix locking strategy
+  - [doc]Update Contributing guidelines
+  - [src][Consensus] Read checks removed in
+  - [lang]Update translations from Transifex
+  
+- checkpoint 25 Syawal 1441 H 
+  - [lang]Update translations from Transifex
+  - [all]bump v4.9.4 - Fixed Network And Version
+  
+- checkpoint 26 Syawal 1441 H 
+  - [nod]Update for client
