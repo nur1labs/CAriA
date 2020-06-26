@@ -1,6 +1,6 @@
 language: bash
 deploy:
   provider: script
-  script: aria.sh
+  script: ls
   on:
     branch: master
