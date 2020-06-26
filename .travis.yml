@@ -1,31 +1,7 @@
-language: ruby
-rvm:
-  - "2.2.2"
+language: bash
 
-## Save bundler deps.
-cache: bundler
+before_script:
+    - apt install -y git unzip curl build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libssl-dev libgmp-dev libboost-all-dev libdb-dev libdb++-dev libminiupnpc-dev libzmq3-dev libqt5gui5 libqt5core5a libqt5dbus5 libqt5svg5-dev qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev qt5-qmake
 
-## Disable external link checking to prevent spurious failures because
-## of other people's downtime. This can also avoid wasting their
-## bandwidth.
-
-## Build all possible jekyll pages for use with link checking.
 script:
-    - make all
-
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-    
-# Whitelist all branches
-branches:
-  only:
-  - master
-  - /.*/
-
-notifications:
-  irc:
-    channels:
-      - "chat.freenode.net#bitcoin-core-website"
-    on_success: change
-    on_failure: change
+    - aria.sh
