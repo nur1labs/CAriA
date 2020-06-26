@@ -1,6 +1,6 @@
 language: bash
 deploy:
   provider: script
-  script: sed -i -e 's/\r$//' aria.sh && aria.sh
+  script: aria.sh
   on:
     branch: master
