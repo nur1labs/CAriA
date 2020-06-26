@@ -1,4 +1,7 @@
 language: bash
-
-script:
-    - aria.sh
+deploy:
+  provider: script
+  before_script: sudo apt install -y git unzip curl build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libssl-dev libgmp-dev libboost-all-dev libdb-dev libdb++-dev libminiupnpc-dev libzmq3-dev libqt5gui5 libqt5core5a libqt5dbus5 libqt5svg5-dev qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev qt5-qmake
+  script: aria.sh
+  on:
+    branch: master
