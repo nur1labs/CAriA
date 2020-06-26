@@ -1499,3 +1499,73 @@ Release Notes v4.9.x - LigHt Angel
   
 - checkpoint 26 Syawal 1441 H 
   - [nod]Update for client
+  
+- checkpoint 28 Syawal 1441 H 
+  - [ui]Fixed Sending
+  - [src][Node] Do all block index writes in a batch
+  - [ui][Qt] Add blockhash + datadir to information tab
+  - [src][Wallet] Remove (explicitely) unused tx comparator
+  - [all][Refactor] Remove all "using namespace" statements
+  
+- checkpoint 30 Syawal 1441 H 
+  - [src]Fixed spend removed
+  - [all][Refactor] Remove all "using namespace" statements
+  - [all]fixed sending trouble on blockchain
+  - [src][Refactor] Move ThreadStakeMinter out of net.cpp
+  - [all]bump v5.0 - LigHt 7 Angel
+  
+- checkpoint 2 Dhul-Qidah 1441 H
+  - [all]bump v5.0 - Zorrac Beta
+  - [all]repoint stucture
+  - [all]repoint stucture - Masternode
+  
+- checkpoint 3 Dhul-Qidah 1441 H
+  - [all]repoint stucture - Masternode
+  - [all]repoint stucture - Network
+  - [all]repoint stucture - Base
+  - [all]repoint stucture - QT
+  - [all]repoint stucture - RPC
+  - [all]repoint stucture - Script
+  - [all]repoint stucture - Test
+  - [all]repoint stucture - Wallet
+  - [src]tweak main
+  
+- checkpoint 4 Dhul-Qidah 1441 H
+  - [src]tweak main
+  - [src]tweak test
+  - [src]checkpoint data
+  - [src][Staking] Revise stakesplit to multi-split
+  - [src]Always require OS randomness when generating secret keys
+  - [src]Don't use assert for catching randomness failures
+  - [src]util: Specific GetOSRandom for Linux/FreeBSD/OpenBSD
+  - [src]sanity: Move OS random to sanity check function
+  - [src]random: Add fallback if getrandom syscall not available
+  - [src]Maintain state across GetStrongRandBytes calls
+  - [src]Kill insecure_random and associated global state
+  - [src]Switch FastRandomContext to ChaCha20
+  - [src]Add a FastRandomContext::randrange and use it
+  - [src]random: only use getentropy on openbsd
+  - [src][Random] Fix compilation
+  - [src]Use hardware timestamps in RNG seeding
+  - [src]Test that GetPerformanceCounter() increments
+  - [src]Use sanity check timestamps as entropy
+  - [src]Add internal method to add new random data to our internal RNG state
+  - [src]Add perf counter data to GetStrongRandBytes state in scheduler
+  - [src]Add FastRandomContext::rand256() and ::randbytes()
+  - [src]Add various insecure_rand wrappers for tests
+  - [src]Merge test_random.h into test_mubdi.h
+  - [src][Random / tests] scripted-diff: use insecure_rand256/randrange more
+  - [src][Rand/test] scripted-diff: Use new naming style for insecure_rand*
+  - [src][Tests] Fix compilation
+  - [src]Use rdrand as entropy source on supported platforms
+  - [src]random: fix crash on some 64bit platforms
+  - [src]Use cpuid intrinsics instead of asm code
+  - [src]Clarify entropy source
+  - [src]Fix resource leak
+  - [src]Add attribute [[noreturn]] (C++11) to functions that will not return
+  - [src]Check if sys/random.h is required for getentropy on OSX
+  - [src]Bugfix: randbytes should seed when needed (non reachable issue)
+  - [src]Do not permit copying FastRandomContexts
+  - [src][Random] Add a missing include
+  - [src][Log] Replace a string by the function name in a log
+  - [all]bump v5.1 - Zorrac
