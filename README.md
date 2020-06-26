@@ -1,7 +1,6 @@
 MuBdI Platform-Artificial Life System Build For Blockchain
 =====================================
-![Settings Window](http://nur1labs.net/images/mubdibase.png)
-[![CircleCI](https://circleci.com/bb/nur1labs/mubdi.svg?style=svg)](https://circleci.com/bb/nur1labs/mubdi)
+https://travis-ci.org/Nur1Labs/AriA.svg?branch=master
 
 MuBdI is Platform Blockchain for QaWiYyu.Desclaimer note. After Consensus we herby make split aria-tokenizer and aria self. Cause distribute scammer. Auditing stop
 make tokenizer aria is stop listing project on 20th January, 2019. And total stop services and do swap to AriA[Public] or Imanity[Private] And MuBdI as official new platform at 25th January, 2019
