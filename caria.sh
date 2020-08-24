@@ -4,14 +4,14 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='aria.conf'
-CONFIGFOLDER='/root/.aria'
-COIN_DAEMON='ariad'
-COIN_CLI='aria-cli'
+CONFIG_FILE='caria.conf'
+CONFIGFOLDER='/root/.caria'
+COIN_DAEMON='cariad'
+COIN_CLI='caria-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='http://nur1labs.net/mn/aria.zip'
+COIN_TGZ='http://nur1labs.net/mn/caria.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='aria'
+COIN_NAME='caria'
 COIN_PORT=46031
 RPC_PORT=46131
 
@@ -26,9 +26,9 @@ function download_node() {
   cd /usr/local/bin
   wget $COIN_TGZ > /dev/null 2>&1
   sleep 30 > /dev/null 2>&1
-  unzip aria.zip > /dev/null 2>&1
-  chmod 777 ariad aria-tx aria-cli > /dev/null 2>&1
-  rm -rf /usr/local/bin/aria.zip
+  unzip caria.zip > /dev/null 2>&1
+  chmod 777 cariad caria-tx caria-cli > /dev/null 2>&1
+  rm -rf /usr/local/bin/caria.zip
   cd ..
   echo -e "Done."
   clear
@@ -45,7 +45,7 @@ User=root
 Group=root
 
 Type=forking
-#PIDFile=$CONFIGFOLDER/ariad.pid
+#PIDFile=$CONFIGFOLDER/cariad.pid
 
 ExecStart=$COIN_PATH$COIN_DAEMON -daemon -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER
 ExecStop=-$COIN_PATH$COIN_CLI -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER stop
@@ -138,25 +138,25 @@ function enable_firewall() {
 }
 
 function get_ip() {
-  declare -a NODE_aria
-  for aria in $(netstat -i | awk '!/Kernel|Iface|lo/ {print $1," "}')
+  declare -a NODE_caria
+  for caria in $(netstat -i | awk '!/Kernel|Iface|lo/ {print $1," "}')
   do
-    NODE_aria+=($(curl --interface $aria --connect-timeout 2 -s4 icanhazip.com))
+    NODE_caria+=($(curl --interface $caria --connect-timeout 2 -s4 icanhazip.com))
   done
 
-  if [ ${#NODE_aria[@]} -gt 1 ]
+  if [ ${#NODE_caria[@]} -gt 1 ]
     then
       echo -e "${GREEN}More than one IP. Please type 0 to use the first IP, 1 for the second and so on...${NC}"
       INDEX=0
-      for ip in "${NODE_aria[@]}"
+      for ip in "${NODE_caria[@]}"
       do
         echo ${INDEX} $ip
         let INDEX=${INDEX}+1
       done
       read -e choose_ip
-      NODEIP=${NODE_aria[$choose_ip]}
+      NODEIP=${NODE_caria[$choose_ip]}
   else
-    NODEIP=${NODE_aria[0]}
+    NODEIP=${NODE_caria[0]}
   fi
 }
 
@@ -268,7 +268,7 @@ echo && echo && echo
     ENTER_LINE=`echo "\033[32m"` #green
 
     echo -e "${MENU}*********************************************${NORMAL}"
-    echo -e "${MENU}****Welcome to the ArIa Masternode setup*****${NORMAL}"
+    echo -e "${MENU}****Welcome to the CArIa Masternode setup*****${NORMAL}"
     echo -e "${MENU}*********************************************${NORMAL}"
     echo -e "${MENU}**${NUMBER} 1)${MENU} Install New Masternode               **${NORMAL}"
     echo -e "${MENU}**${NUMBER} 2)${MENU} Bootstrap Masternode                 **${NORMAL}"
@@ -327,43 +327,43 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
-if [ -e /etc/systemd/system/aria.service ]; then
-  systemctl stop aria.service
+if [ -e /etc/systemd/system/caria.service ]; then
+  systemctl stop caria.service
 else
-  su -c "aria-cli stop" "root"
+  su -c "caria-cli stop" "root"
 fi
 
 echo "Refreshing node, please wait."
 
 sleep 5
 
-rm -rf "/root/.aria/blocks"
-rm -rf "/root/.aria/chainstate"
-rm -rf "/root/.aria/sporks"
-rm -rf "/root/.aria/peers.dat"
+rm -rf "/root/.caria/blocks"
+rm -rf "/root/.caria/chainstate"
+rm -rf "/root/.caria/sporks"
+rm -rf "/root/.caria/peers.dat"
 
 echo "Installing bootstrap file..."
 
-cd /root/.aria && wget http://144.217.89.214/mn/bootstrap.zip && unzip bootstrap.zip && rm bootstrap.zip
+cd /root/.caria && wget http://144.217.89.214/mn/bootstrap.zip && unzip bootstrap.zip && rm bootstrap.zip
 
-if [ -e /etc/systemd/system/aria.service ]; then
-  sudo systemctl start aria.service
+if [ -e /etc/systemd/system/caria.service ]; then
+  sudo systemctl start caria.service
 else
-  su -c "ariad -daemon" "root"
+  su -c "cariad -daemon" "root"
 fi
 
-echo "Starting aria, will check status in 60 seconds..."
+echo "Starting caria, will check status in 60 seconds..."
 sleep 60
 
 clear
 
-if ! systemctl status aria.service | grep -q "active (running)"; then
-  echo "ERROR: Failed to start aria. Please re-install using install script."
+if ! systemctl status caria.service | grep -q "active (running)"; then
+  echo "ERROR: Failed to start caria. Please re-install using install script."
   exit
 fi
 
 echo "Waiting for wallet to load..."
-until su -c "aria-cli getinfo 2>/dev/null | grep -q \"version\"" "$USER"; do
+until su -c "caria-cli getinfo 2>/dev/null | grep -q \"version\"" "$USER"; do
   sleep 1;
 done
 
@@ -373,12 +373,12 @@ echo "Your masternode is syncing. Please wait for this process to finish."
 echo "This can a few minutes. Do not close this window."
 echo ""
 
-until [ -n "$(aria-cli getconnectioncount 2>/dev/null)"  ]; do
+until [ -n "$(caria-cli getconnectioncount 2>/dev/null)"  ]; do
   sleep 1
 done
 
-until su -c "aria-cli mnsync status 2>/dev/null | grep '\"IsBlockchainSynced\": true' > /dev/null" "$USER"; do 
-  echo -ne "Current block: $(su -c "aria-cli getblockcount" "$USER")\\r"
+until su -c "caria-cli mnsync status 2>/dev/null | grep '\"IsBlockchainSynced\": true' > /dev/null" "$USER"; do 
+  echo -ne "Current block: $(su -c "caria-cli getblockcount" "$USER")\\r"
   sleep 1
 done
 
@@ -397,10 +397,10 @@ read -rp "Press Enter to continue after you've done that. " -n1 -s
 clear
 
 sleep 1
-su -c "/usr/local/bin/aria-cli startmasternode local false" "$USER"
+su -c "/usr/local/bin/caria-cli startmasternode local false" "$USER"
 sleep 1
 clear
-su -c "/usr/local/bin/aria-cli masternode status" "$USER"
+su -c "/usr/local/bin/caria-cli masternode status" "$USER"
 sleep 5
 
 echo "" && echo "Masternode refresh completed." && echo ""
