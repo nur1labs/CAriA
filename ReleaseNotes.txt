@@ -1199,7 +1199,7 @@ Release notes 4.7.x - Zero Platform
   - [src]change string
   
 - checkpoint 23 Syaban 1441 H
-  - [all]re-merge aria-dirham
+  - [all]re-merge caria-dirham
   - [all]updates data blockchain
   - [all]bump v4.7.2.2 rc 4
  
@@ -1213,7 +1213,7 @@ Release notes 4.7.x - Zero Platform
   - [src]AcceptBlock(), reject invalid PoS stake
   - [src]AcceptBlock() - not accept blocks from a forked chain that exceed
   - [all]bump v4.7.2.2 rc 5
-  - [nod]change up for prepare AriA cross DirHam Testnet
+  - [nod]change up for prepare caria cross DirHam Testnet
   - [src]total disable Zerocoin by timestamp
   - [src]AcceptBlock() isBlockFromFork flag not contemplating prev blocks from
   - [src]block spam filter, validate non null nodestate
@@ -1272,7 +1272,7 @@ Release notes 4.7.x - Zero Platform
   - [src][RPC] fix signrawtransaction hack to allow signing of spent inputs
   - [src][Wallet] Fix segfault with runtime -disablewallet
   - [src]Don't bother checking obfuscation messages
-  - [src]AcceptBlock() for-each loops variables moved to const
+  - [src]AcceptBlock() for-each loops vcariables moved to const
   - [src][RPC] Fixup signrawtransaction on regtest
   - [ui][Qt] Fix a windows only crash when r-clicking a proposal
   - [src]fake serials attack enforcement
@@ -1313,7 +1313,7 @@ Release notes 4.7.x - Zero Platform
   - [src]remove spam log output in stakeTargetHit()
   - [ui]Remove security level from UI
   - [src]Add clearspendcache RPC command
-  - [src]re-add zpivchain.h (fixes merge conflict error)
+  - [src]re-add zmubdichain.h (fixes merge conflict error)
   - [src]Make GetSerialHash return const again
   - [all]bump v4.8
   
@@ -1355,7 +1355,7 @@ Release Notes v4.8.x - DarK Angel
   - [all][Refactor] Rename ui_interface.h file
   - [src][Net] Valid blocks from forks badly rejected due an invalid view
   - [src][Net] AcceptBlock, first prev block loaded from disk
-  - [src][Refactor] Remove unused setStakeSeen variable
+  - [src][Refactor] Remove unused setStakeSeen vcariable
   - [ui][UI] Simplify Qt margins. No functional change
   - [ui]Hide zdhm related options
   - [ui]Fix margins
@@ -1569,3 +1569,838 @@ Release Notes v4.9.x - LigHt Angel
   - [src][Random] Add a missing include
   - [src][Log] Replace a string by the function name in a log
   - [all]bump v5.1 - Zorrac
+  
+- checkpoint 5 Dhul-Qidah 1441 H
+  - [src][Refactor] Combine parameter checking of budget commands
+  - [src][Tests] Add Spork functional test and update RegTest spork key
+  - [src][RPC] Correct issues with budget commands
+  - [src][Review] Convert runtime_error to JSONRPCError
+  - [src][Refactor] Fix stake age checks for regtest
+  - [src]Modify GetNextWorkRequired to set Target Limit correctly on first PoS
+  - [src][Review] Move block identification to chainparams to support testnet
+  - [src][Staking] Modify miner and staking thread for efficency
+  - [src][RPC] require valid URL scheme on budget commands
+  - [src]Remove Bitcoin Core 0.8 block hardlinking
+  - [src][Miner] Don't create new keys when generating PoS blocks
+  
+- checkpoint 9 Dhul-Qidah 1441 H
+  - [src][Cleanup] Clean error messages in CheckBlock
+  - [src][Core] Do not check block if it's not the one needed
+  - [src][Trivial] Compiler warning, uint_32 compared against int
+  - [src][Refactor][PoS] Do not calculate the prevBlock medianTimePast
+  - [src][PoS] Remove extra nTime check in Stake()
+  - [src][Wallet] SelectStakeCoins using block time and fix GetBlocksToMaturity
+  - [src][PoS] New logic for stake input maturity
+  - [src][Trivial] logging, removing none required jump lines
+  - [src][PoS][Wallet] CreateCoinStake, if the block is from the future
+  - [src][Wallet] Staking, unreacheable code removed
+  - [src][Refactor] Add future block time drift to chainparams
+  - [src][PoS] Stake(): Add check for staked blocks in the future
+  - [src][PoS] * GetKernelStakeModifier, look for the next block
+  - [src][Mempool] // As zero fee transactions are not going to be accepted
+  - [ui][GUI] sendCoinsdialog, removing zero tx fee checkbox and label
+  - [all]bump v5.1.1 - Zorrac
+  
+- checkpoint 14 Dhul-Qidah 1441 H
+  - [src][PoS]cbase maturity
+  - [src][Net] Protocol update enforcement for 70917 and new spork keys
+  - [src][DB] Db runtime error cleaning the vcariable that needs to be logged
+  - [ui]initial new gui work, nav
+  - [ui]topbar integrated
+  - [ui]style changes
+  - [ui]dashboard tx list and abstract rows integrated
+  - [ui]send screen + dependencies
+  - [ui]receive address widget + dependencies + snackbar
+  - [ui]addresses widget + dependencies
+  - [ui]op background added
+  - [ui]settings integrated
+  - [ui]update from remote
+  - [ui]shortcuts
+  - [ui]balance connected
+  - [ui]dashboard tx list included in a good degree
+  - [ui]dashboard txes icons
+  - [ui]tx row changes + number format
+  
+- checkpoint 16 Dhul-Qidah 1441 H
+  - [ui]connection topbar button connected -- icon left
+  - [ui]sync topbar update
+  - [ui]message from backend added without further polish
+  - [ui]receive widget - address connected
+  - [ui]receive dialog
+  - [ui]my addresses list
+  - [ui]add label dialog
+  - [ui]snackbar message
+  - [ui]url to image changed
+  - [ui]send quarter connected
+  - [ui]subscribe to core signals + screen events
+  - [all]send screen more connections
+  - [ui]more changes on sendwidget
+  - [all]merge pull genesis
+  - [ui]sendWidget improvements and some abstractions
+  - [ui]payment request connected + getNewAddress method on module
+  - [ui]empty views + qr color
+  - [ui]lock/unlock/encrypt wallet + contacts widget
+  - [ui]empty screens dashboard
+  - [ui]dashboard + some minor improvements
+  - [ui]tx filtering, addresses filtering, topbar crash fix
+  - [ui]stake cai icon and row + receivewidget minor ui fix
+  - [ui]send confirmation connected
+  - [ui]request unlock method created
+  - [ui]QModelIndex siblingAtColumn method not supported in qt 5.9.7 fix
+  - [all]svg support
+  - [ui]addresses widget tooltip menu actions
+  - [ui]send tx segfault fix + minor cleanup on sendCoins method
+  - [ui]connect edit contact label
+  - [ui]removing old cached tx
+  - [ui]refresh receive address view
+  - [ui]send widget refresh view
+  - [ui]change address dialog connected
+  - [ui]send widget, contacts dropdown and change address features connected
+  - [ui]window min size fix
+  - [ui]console widget connected
+  - [ui]nav + console shortcuts
+  - [all]connected 50%
+  
+- checkpoint 17 Dhul-Qidah 1441 H
+  - [ui]fixed bug tweak
+  - [ui]primary button style
+  - [ui]settings wallet repair screen connected
+  - [ui]settings information screen connected
+  - [ui]signal events abstraction
+  - [ui]settings backup screen connected
+  - [ui]qt signaling cleanup
+  - [ui]snack info message signal
+  - [ui]new splash screen connected
+  - [ui]welcome walkthrough dialog
+  - [ui]send view, coin control style + integrated
+  - [ui]css util methods
+  - [ui]settings not used screens cleanup + network monitor connected
+  - [ui]settings options main screen connected
+  - [ui]transaction status to string method
+  - [all]connected 70%
+  - [ui]getWalletTx for tx detail dialog usage
+  - [ui]tx detail dialog 85% connected to send screen and dashboard
+  - [ui]askkpassphrase dialog new style
+  - [ui]dialog and opaque background signal
+  - [ui]wallet backup and change passphrase connected
+  - [ui]Styles improvements
+  - [ui]settings options connected
+  - [ui]layout settings changed
+  - [ui]receive widget, address label added
+  - [ui]splash centered
+  - [ui]dashboard sort tx by amount or date
+  - [all]get address/key creation time method
+  - [ui]key creation time connected
+  - [ui]UI default text payment request and change address changed + address
+  - [ui]jpg images removed
+  - [ui]reset spends connected
+  - [ui]change address added
+  - [ui]expandable button cleanup
+  - [ui]qtutils, init editline + shadow method created
+  - [ui]editLine style initialization + minor cleanup
+  - [ui]label completion by known address input
+  - [ui]format balance moved to GUIUtils
+  - [ui]tx holder, row index invalid data fix
+  - [ui]splash ui + settingsDisplayOption ui layout modifications
+  - [ui]layout and style changes
+  - [ui]Active button style added
+  - [ui]Show indicator method added
+  - [ui]option button active visual indicator connected + splash progress
+  - [all]connected 80%
+  
+ - checkpoint 18 Dhul-Qidah 1441 H
+  - [ui]tweaking for bugs
+  - [ui]frameless splash
+  - [ui]send custom fee checkbox events
+  - [ui]Splash and dialog layout changes
+  - [ui]send confirm dialog signal not found fixed, askpassphrasedialog layout
+  - [ui]Dialog coin control style changed
+  - [ui]splash jpg image removed
+  - [ui]Style check buttons changed, coincontrol buttons changed
+  - [ui]minor cleanup + shadow in empty view
+  - [ui]message event, bool ret added
+  - [ui]Shadow dashboard hidden
+  - [ui]Style hover nav changed
+  - [ui]UI Events abstraction, use inherited methods
+  - [ui]Unconfirmed transactions status connected (style)
+  - [ui]dashboard inherit from correct abstract class now + uri dialog fix
+  - [ui]Style changes, in coincontrol, tables, topbar, icon transactions
+  - [ui]style tree widget list changed
+  - [ui]coin control focus and alternate color removed
+  - [ui]topbar icons connected to the backend
+  - [ui]style and elements tree widget added
+  - [ui]coin control tree widget root decoration
+  - [ui]style options button changed
+  - [ui]dashboard unconfirmed row icon
+  - [ui]pixelated pixmap icons fixed
+  - [ui]Layout fixes in send, settings display and resources warning fixes
+  - [ui]tooltip menu generalization
+  - [ui]status warninng sync dashboard added, warning layouts removed
+  - [ui]send multi outputs, tooltip menu + delete row connected
+  - [ui]send screen, contacts dropdown position on multi output fix
+  - [all]connected 90%
+  
+- checkpoint 19 Dhul-Qidah 1441 H
+  - [all]new method used submodules
+  - [nod]updates core
+  - [nod]added for plugin.sh
+  - [ui]Layout changes, in main window and address
+  - [ui]Layout warning changed
+  - [ui]dashboard warning icon
+  - [ui]Progress sync added
+  - [ui]topbar progress bar connected to sync widget
+  - [ui]loading dialog created
+  - [ui]topbar generalized to mwidget
+  - [ui]loading dialog + runnable tasks object
+  - [ui]move encrypt wallet to background task
+  - [ui]change theme, dark mode initial connection
+  - [ui]css style dark
+  - [ui]button show password
+  - [ui]style dark mode changed
+  - [ui]coincontrol dark mode fixed
+  - [ui]dark mode improvements all over the UI
+  - [all]initializing 10%
+  
+- checkpoint 21 Dhul-Qidah 1441 H
+  - [ui]wallet sync signal connected to dashboard warning
+  - [ui]Style dark changes
+  - [ui]Icons console changed
+  - [ui]Icons darkmode added
+  - [ui]signal changeTheme name changed to not override parent slot
+  - [ui]background loading crash fixed
+  - [all]qtcharts lib integrated
+  - [ui]console update theme
+  - [ui]tx row, use tx model flow instead of direct access
+  - [ui]dashboard stakes chart connected (main logic left)
+  - [ui]wallet sync warning visible/invisible + minor UI modifications
+  - [ui]passphrase dialog edit line echo mode on click change fixed
+  - [all]transaction size calculation method created + connected to the tx
+  - [ui]create/update contact from the send multi screen fully functional
+  - [ui]send screen, tooltip menu width and remove one by one entry fix
+  - [ui]backup screen, texts changed
+  - [all]initializing 50%
+  - [ui]update send screen balance on every entry
+  - [ui]amount entry max range
+  - [sub]added submodule for new and remove the useless tags[merging]
+  - [ui]tx detail, show inputs connected
+  - [ui]null chart change theme fix
+  - [ui]Loading resources added
+  - [ui][GUI] tx detail dialog outputs connected
+  - [ui][GUI] coincontrol dialog ok button style
+  - [ui]layout send changed
+  - [ui]Layout confirmation changed, copy button added
+  - [ui][GUI] txdetail dialog inputs organized in grid layout
+  - [ui][GUI] snackbar generalized + txDetailDialog copy id event connected
+  - [ui][GUI] dashboard stakes CAI chart color
+  - [ui][GUI] settings sign message connected
+  
+- checkpoint 22 Dhul-Qidah 1441 H
+  - [ui]Sign layout changed
+  - [ui][GUI] settings sign screen addresses dropdown connected
+  - [ui][GUI] QLineEdit selection color and background changed
+  - [ui]Send layout changed
+  - [ui][GUI] welcome tutorial go back between screens fixed
+  - [ui][GUI] bip38 encrypt screen connected
+  - [ui][GUI] hide dialog on loading action
+  - [ui][GUI] loading text animation
+  - [ui][GUI] information and warning standard qt dialog
+  - [ui][Model] isWalletUnlocked method created
+  - [ui][GUI] check if the wallet is unlocked to perform certain actions
+  - [ui][GUI] Address table model update amount of send/receive address
+  - [ui][GUI] welcome tutorial texts changed
+  - [ui]Send layout changed
+  - [ui]Layout space changes
+  - [ui]layout request changed
+  - [all]initializing 80%
+  - [ui]Style and layout changes
+  - [ui][GUI] request dialog layout organization + send layout change
+  - [ui][GUI] dashboard txes sort fixed
+  - [ui][GUI] send confirmation dialog, not show outputs when there is only one
+  - [ui][GUI] styles fixed from a bad rebase
+  - [ui][GUI] request dialog address not updated fix + layout reorg
+  - [ui][GUI] comma char replaced thin space on html formatted balance
+  - [ui][GUI] win stake tx amount color fix
+  - [all]Remove openssl info from init/log and from Qt debug window
+  
+- checkpoint 23 Dhul-Qidah 1441 H
+  - [all][Refactor] Remove unused OpenSSL includes
+  - [ui][GUI] dashboard chart re organization
+  - [ui]style changes
+  - [ui][GUI] dashboard chart, days in months connected
+  - [ui]Combobox arrow style and
+  - [ui][GUI] openuridialog buttons style, code cleanup + encryptionStatus
+  - [ui]Style combobox settings changed
+  - [ui]dashboard refresh chart
+  - [ui][GUI] contacts dropdown change theme
+  - [ui][WalletModel] wallet first key creation time method implemented
+  - [ui][GUI] dashboard staking chart, year and month filters + chart logic
+  - [ui]Style chart added
+  - [ui]style combobox chart changed
+  - [ui][GUI] chart combobox rounded borders
+  - [ui]style combo-secundary added, group title added
+  - [ui][GUI] chart sort and filter controls style improved
+  - [ui][GUI] dashboard, staking chart style margin fix
+  - [ui][GUI] dashboard staking chart, move chart position flow
+  - [ui][Tx Model] tx arrive signal, tx hash added
+  - [ui][WalletModel] isCoinStake method added
+  - [ui][GUI] dashboard, only update chart when stakes arrive
+  - [ui]Chart buttons style changed
+  - [ui][GUI] dashboard hasStakes method
+  - [ui]layout chart, and style buttons changed
+  - [ui][GUI] chart sort by buttons expanded
+  - [ui]Arrow back chart added
+  - [ui][GUI] dark theme invalid icons name fix
+  - [ui][GUI] layout reorg, duplicate arrow on comboBox fix
+  - [ui][GUI] dashboard chart arrow style
+  - [ui]style dark mode style settings fixed
+  - [ui][GUI] FAQ resizable
+  - [ui]Receive error fixed
+  - [ui][GUI] MN screens ui coded (not connected) + pwidget constructor cleanup
+  - [ui][GUI] tooltip texts generalized
+  - [all]connected 100%
+  
+- checkpoint 24 Dhul-Qidah 1441 H
+  - [all]update cores
+  - [ui][GUI] master nodes model + new screen implemented
+  - [all][GUI] Delete single master node implemented
+  - [ui][GUI] master nodes screen, subtitle and MN info
+  - [ui][GUI] topbar lock btn open non perfect opening fixed
+  - [ui][GUI] receive address screen, change address label dialog text correct
+  - [ui][GUI] navmenu code better abstracted
+  - [ui][GUI] verifyWalletUnlocked method implemented
+  - [ui][GUI] dashboard change theme, staking graph fix
+  - [ui][Model] no swiftTx by default
+  - [ui][GUI] master nodes model and creation wizard
+  - [ui][REBASE] rebase issues solved
+  - [ui][GUI] FAQ, MN description added
+  - [ui][GUI] openFaq method created
+  - [ui][GUI] MN model, update list + get master node internal data
+  - [ui][GUI] Master nodes flow, MN info dialog created and connected
+  - [ui][GUI] Master node list update timer
+  - [ui][GUI] minor snackbar dialog delete
+  - [ui] FAQ icon added
+  - [all] initializing 100%
+  - [ui][GUI] dashboard staking chart, change theme y axis color
+  - [ui][GUI] payment request dialog open fix + copy URI connected
+  - [ui][GUI] send screen, parse URI
+  - [ui][GUI] Send, add new entry validation
+  - [ui][GUI] send screen, multi outputs validations
+  - [ui][GUI] Sign/Verify flow fully connected
+  - [ui][GUI] settings widget layout improvements
+  - [ui][GUI] MN wizard mode texts included
+  - [ui][GUI] settings tools, bip38 layout and encription
+  - [ui][GUI] settings wallet, multiSend layout organization improved
+  - [ui][GUI] settings tools sign/verify completed
+  - [ui][GUI] Send screen, open URI from file connected
+  - [ui][GUI] faq + multisend layout minor reorg
+  - [ui][GUI] askpassphrase dialog wrap title
+  - [ui][GUI] settings widget, only one option checked at time
+  - [ui][GUI] settings options, re organization + code cleanup
+  - [ui][GUI] settings duplicate option name changed
+  - [ui][GUI] tx detail, title correction
+  - [ui][GUI] About and commands dialog connected
+  - [all] connected addon 30%
+  - [ui][GUI] settings options re organization
+  - [ui]Layout settings main changed, text style added
+  
+- checkpoint 25 Dhul-Qidah 1441 H
+  - [ui][GUI] Default dialog visible when the screen is not visible
+  - [ui][GUI] dashboard, update chart only with own stakes + cleanup
+  - [ui][WalletModel] set wallet default fee method created
+  - [ui][GUI] Custom fee option connected on send screen
+  - [nod]connected and testing
+  - [ui][GUI] Minor layout corrections in custom fee dialog and tools sign
+  - [ui][Cleanup] Continuing with the final cleanup, setProperty methods
+  - [ui][GUI] Contacts screen, add contact -> notify about an already
+  - [ui]Layout intro app changed
+  - [ui]Background and layout changed
+  - [ui][GUI] Intro dialog new style finished
+  - [ui][GUI] Intro dialog minor corrections
+  - [ui][GUI] send row hover style minor fix and smart fee update connected
+  - [ui][GUI] enabled/disabled editable status added
+  - [nod]connected and testing
+  - [ui][GUI] Master nodes wizard creation, only controller flow
+  - [ui][GUI] Master nodes wizard input validations + code cleanup
+  - [ui][GUI] settings/tools bip38 decrypt connected
+  - [ui][GUI][Model] MultiSend functionality fully revamped and connected
+  - [ui][GUI] receive address padding overlapping text fix
+  - [ui][GUI] topbar lock, not perform any action if the wallet
+  - [ui][REBASE] rebase fixes
+  - [nod]connected and testing
+  - [ui][GUI] payment request dropdown style fix
+  - [ui][GUI] styling improvements, css class property set cleanup
+  - [all][Build] build system QT fixes + duplicated moc object fix
+  - [all][Build] qt missing-img-files, fixing rebase inserted issues
+  - [ui][Model] Invalid iterator position crash fix
+  - [ui][UI] series removal not cleaning the charts pointer fix
+  - [nod]connected and testing
+  - [ui][GUI] Request dialog storing address label + description text layout\
+  - [ui][Wallet][Model] GetKeyCreationTime moved from walletModel
+  - [ui][GUI] My address row set date if exists
+  - [ui][GUI] Settings information minor layout fix + code reorg and refactor
+  - [nod]connected and testing
+  - [ui][Model] Only look for the creation time for internal addresses
+  - [ui][GUI] Show dialog correct title + MN show/hide screen checkbox removed
+  - [ui][Trivial] Further small wording tweaks
+  - [ui][GUI] stake spin box range + settings console not returning values
+  - [ui][GUI] settings display options show display unit fix
+  - [nod]connected and testing
+  - [ui][GUI] Master nodes screen, FAQ opening MN section
+  - [ui][GUI] open/close option button arrow icon connected
+  - [ui][GUI][Model] Settings options reset
+  - [ui][Model] isTestnet method created, abstracting the UI from backend
+  - [ui][GUI] FAQ rounded btns
+  - [ui][Model][MasterNodes] Master node MISSING status added
+  - [ui][GUI] Master node screen improvements
+  - [ui][GUI] Contacts screen, update list view and empty screen
+  - [ui][GUI][Model] Settings options, mechanism to discard options
+  - [ui]Wallet][Model] Badly nStakeSplitThreshold set in optionsModel fixed
+  - [nod]connected and testing
+  - [ui][GUI] dashboard staking chart, prevent series added twice
+  - [ui][Model] isCoinStakeMine method validating against the tx input
+  
+- checkpoint 26 Dhul-Qidah 1441 H
+  - [ui][GUI] Dashboard screen
+  - [ui][GUI][Model] Masternodes screen, export Masternode data for remote
+  - [ui][GUI][Model] Masternodes screen
+  - [ui][GUI] tx detail dialog closing delay solved + cleanup
+  - [ui][GUI] Dashboard screen, hide tx filters
+  - [ui][GUI][Model] Masternodes screen, verify if masternode collateral
+  - [ui][GUI] AskPassphraseDialog, missing opaque background on dialog popup
+  - [ui][GUI] notify user when the system doesn't have a predetermined text
+  - [ui][GUI] Hack to re paint the chart view for linux
+  - [ui][GUI] Update coin control style when the theme changes
+  - [ui][GUI] Linux QComboBox listView items internal invalid focus square
+  - [ui][GUI] Settings multisend, list missing container style
+  - [ui][Trivial] Cleanup UI compile warnings
+  - [nod]connected and testing
+  - [ui][GUI] Settings trailing spaces + minimize layout vertical expansion
+  - [ui][GUI] Settings multiSend, request wallet unlock before add or delete
+  - [ui][GUI] * processNewTransaction method connected to dashboard screen
+  - [ui][GUI] welcome tutorial, typo fixed and MN text changed
+  - [ui][UI] Wallet sync state, pending icon and style added to the transaction
+  - [ui][GUI] Fix connectSlotsByName errors
+  - [ui][GUI] Cleanup build warnings
+  - [ui]UI] Open uri dialog, invalid place holder text removed
+  - [ui][Build][UI] Provisional move of the QTCharts library to optional dependency
+  - [src]testnet flag disabled
+  - [ui][Helpers] Invalid conversion from ‘const char*’ to ‘uint
+  - [ui][UI] Forced reset to activate the settings options custom values
+  - [ui][Refactor] * Capitalized mubdigui and addressfilterproxymodel filename
+  - [ui][GUI] Abstract background thread process flow created, dashboard
+  - [ui][Trivial] Compiler warnings, not used variables
+  - [ui][UI] - When clicking unlock/lock wallet, the password get edit text
+  - [all][UI] NavMenu, app's version connected
+  - [ui][Trivial] transactionTableModel foreach using const variable
+  - [ui][UI] - Dashboard chart load, min update time interval, not update
+  
+- checkpoint 28 Dhul-Qidah 1441 H
+  - [sub]fixed submodules
+  - [dep]fixed plugins compiler
+  - [ui]bug fixed display and moc
+  
+- checkpoint 29 Dhul-Qidah 1441 H
+  - [all]bump v5.2 - Himeragi
+  - [ui][Trivial][UI] MN screen, inform and warn texts changed
+  - [ui][Qt] Guard MN tab from possible missing TXs in masternode.conf
+  - [all][UI] Send screen, onResetCustomOptions() --> coinControl is cleaned
+  - [src][Consensus] Remove Old message format in CMasternodeBroadcast
+  - [ui][QT] Memory leak re creating the row object instead of re initialize it
+  - [ui][Trivial] Fix mnrow ifdef typo
+  - [ui][Qt] Don't set placeholder QPlainTextEdit
+  - [ui][QT] Dashboard chart, left and right movement control buttons
+  - [src]change copyright core
+  - [dep][Build] CMake Improvements
+  - [dep]Allow WSL builds with cmake
+  - [dep][Build] Update Qt CMakeLists for new GUI
+  - [all][Performance][Wallet][QT][Model] * Parallelization of the transaction
+  - [ui]Refresh content of coin control table upon reopening
+  - [ui][Wallet][Model][QT] Multi-thread transactionTableModel startup
+  - [all]bump v5.2.1 - Himeragi
+  - [ui]fixed gold[test]
+  
+- checkpoint 1 Dhul-Hijah 1441 H
+  - [all]Added Gold System
+  - [ui][QT] Dashboard chart, do not refresh the chart when a refresh
+  - [ui][Qt] Update source strings
+  - [ui][GUI] Tx detail dialog, show seconds in toString date
+  - [ui][GUI][Trivial] Remove hardcoded address
+  - [src][Compilation] Pass caught exceptions by reference
+  - [all][Refactor] Add const qualifier to exception catching
+  - [ui][GUI] Update amounts when entry is removed from SendMultiRow
+  - [sub]Update `crypto/common.h` functions to use compat endian header
+  - [dep][CMake] Search for and include system includes dir containing endian.h
+  - [ui][Qt] Reintroduce networkstyle to title texts
+  - [ui]Resize splash and use background-image
+  - [ui]Show current version on splash screen
+  - [all]bump v5.2.2 - Himeragi
+  
+- checkpoint 2 Dhul-Hijah 1441 H
+  - [src][Refactor] rename SporkKey to SporkPubKey
+  - [all][Refactor] refactor/fix CSporkManager and CSporkMessage classes
+  - [src][Spork] Protect CSporkManager with critical section
+  - [src][Spork] CSporkManager class serialization
+  - [src][Spork] Do not accept sporks signed too far into the future
+  - [src][Spork] Remove unused SPORK_7_MASTERNODE_SCANNING
+  - [src][Spork] Remove unused SPORK_11 and SPORK_12
+  - [src][Spork] Define SporkId enum (with its serialization)
+  - [src]added Gold Trace
+  - [src][Spork] Introduce CSporkDef and remove if/else blocks
+  - [src][Spork] Make CSporkMessage::vchSig private
+  - [src]Fix spork RPC to use new spork defs
+  - [src][Core] ReprocessBlocks: adjust to MuBdI blocktime
+  - [src][Spork] fix CSporkManager maps
+  - [all]bump v5.2.3 - Himeragi
+  
+- checkpoint 3 Dhul-Hijah 1441 H
+  - [ui]move units to units qt
+  - [src][Trivial] rename DisconnectBlocks argument for consistency
+  - [src][Trivial] Align the format of the log messages in kernel.cpp
+  - [src][Startup] Don't continue loading the wallet if the shutdown
+  - [ui][Cleanup] Prev 4.0 wallet UI files cleanup
+  - [ui][Cleanup] Cmake, removal of old gui files
+  - [ui][Build] missing QWindowStateChangeEvent dependency added
+  - [src][Startup][Refactor][Backport]
+  - [src][Logging][Startup]
+  - [src][Trivial] Get rid of compiler warnings
+  - [src][Wallet][Startup][DB][Backport] bitcoin#10952 BTC back port
+  - [ui][GUI] Dashboard chart, covering edge empty list problem
+  - [ui][GUI] Background task catching errors that have no information about
+  - [ui][GUI] Dashboard hasStakes variable set when the view is loaded
+  - [src][Startup][Wallet] Don't continue rescanning the wallet if shutdown
+  - [src][Trivial] Init.cpp, instead of use LogPrint, use error
+  - [src][Trivial] Use error() instead of LogPrintf + return false
+  - [dep]add snapcraft support to mubdi, static build
+  - [all]bump v5.2.4 - Himeragi
+  
+- checkpoint 4 Dhul-Hijah 1441 H
+  - [ui]change base color
+  - [src][RPC] validate proposal amount earlier
+  - [src][Script] Introduce constant for maximum CScript length
+  - [src][Script] Treat overly long scriptPubKeys as unspendable
+  - [src][Bug] Fix OOM when deserializing UTXO entries with invalid length
+  - [src]CDataStream::ignore Throw exception instead of assert on negative nSize
+  - [src][Tests] Add tests for CCoins deserialization
+  - [src][Wallet] Do not store Merkle branches in the wallet
+  - [src][Wallet] Switch to a constant-space Merkle root/branch algorithm
+  - [src][Refactor] Move wallet functions out of header
+  - [src][Wallet] Do not flush the wallet in AddToWalletIfInvolvingMe(..)
+  - [src][Wallet] Keep track of explicit wallet conflicts instead of using
+  - [src]Make sure conflicted wallet tx's update balances
+  - [src]Make wallet descendant searching more efficient
+  - [src]Add new rpc call: abandontransaction
+  - [src][Wallet] Call notification signal when a transaction is abandoned
+  - [src][Wallet] sort pending wallet transactions before reaccepting
+  - [src]Flush wallet after abandontransaction
+  - [src]Remove stale wallet transactions on initial load
+  - [src]Fix calculation of balances and available coins
+  - [src]Fix that CWallet::AbandonTransaction would only traverse one level
+  - [src][Wallet] Fix an error in tx depth computation
+  - [all][Wallet] Fix inconsistencies with GetDepthInMainChain
+  
+- checkpoint 6 Dhul-Hijah 1441 H
+  - [ui]fixed bug anonymous
+  - [all]bump v5.2.4.1 - Himeragi
+  
+- checkpoint 7 Dhul-Hijah 1441 H
+  - [ui]fixed missing ui
+  - [src][Core][Tests] REGTEST: fix nStakeModifier=0
+  - [sub][Tests] Add wallet_reorg-stake functional test
+  - [src][Wallet] Fix bug with coinstake inputs wrongly marked as spent
+  - [sub][Tests] Add wallet_reorg-stake functional test to test_runner.py
+  - [src][Core] Placeholder block height for activation of new signatures
+  - [src][Refactor] Define messageSigner and hashSigner classes
+  - [src][Consensus] New signature for CMasternodePaymentWinner
+  - [src][Trivial] MPW: rename SignatureValid() to CheckSignature()
+  - [src][Consensus] New signature for CMasternodePing
+  - [src][Consensus] Include blockhash in CMasternodePing hash
+  - [src][Consensus] New signature for CBudgetVote
+  - [src][Trivial] CBudgetVote: rename SignatureValid() to CheckSignature()
+  - [src][Consensus] New signature for CFinalizedBudgetVote
+  - [src][Trivial] FBV: rename SignatureValid() to CheckSignature()
+  - [src][Trivial] constructors with arg list for BV and FBV
+  - [src][Consensus] New signature for CConsensusVote (SwiftX)
+  - [src][Trivial] CConsensusVote: rename SignatureValid() to CheckSignature()
+  - [src][Trivial] Align the format of the log messages
+  - [src][Consensus] New signature for CMasternodeBroadcast
+  - [src][Trivial] rename mnb: sig --> vchSig, VerifySignature --> CheckSignature
+  - [src][Consensus] New signature for CObfuScationRelay
+  - [src][Consensus] New signature for CSporkMessage
+  - [src][Core] make signatures private variables in their classes
+  - [src][Refactor] CFinalizedBudget/Broadcast cleanup constructors
+  - [src][Core] Add a field 'nMessVersion' to signed messages
+  - [src][Consensus] add nMessVersion to signature hash
+  - [src][Consensus] Reject old message versions for CMasternodePaymentWinner
+  - [src][Consensus] Reject old message versions for CSporkMessage
+  - [src][Refactor] define CSignedMessage parent class
+  
+- checkpoint 8 Dhul-Hijah 1441 H
+  - [src][Refactor] CSignedMessage parent of CMasternode and CMasternodePing
+  - [src][Refactor] CSignedMessage parent of CMasternodePaymentWinner
+  - [src][Refactor] CSignedMessage parent of CBudgetVote/CFinalizedBudgetVote
+  - [src][Refactor] Abstract GetPublicKey in CSignedMessage
+  - [src][Refactor] CSignedMessage parent of CConsensusVote
+  - [src][Refactor] CSignedMessage parent of CObfuscationRelay
+  - [src][Refactor] CSignedMessage parent of CSporkMessage
+  - [src][Consensus] fNewSigs always defaults to false
+  - [src][Fix] Double signatures swap in CMasternode
+  - [src][Fix] remove CMasternode explicit constructor from mnb
+  - [src][Fix] default public key for mnb
+  - [src][Trivial] better log for CHashSigner::VerifyHash failures
+  - [src][Fix] mnp sigtime and signature check for mnb in CheckAndUpdate
+  - [src][RPC] fix startmasternode "alias/missing" relay
+  - [src][RPC] Refactor masternode start/broadcast
+  - [src][Core] mnb: sign the hex representation of the double hash of the data
+  - [src][Bug] Fix messages serialization for version MESS_VER_STRMESS
+  - [src][RPC] decodemasternodebroadcast: add nMessVersion field for MNB and MNP
+  - [src][Trivial][Cleanup] fix a few log lines
+  - [src][Trivial] Fix error messages: Setkey -> GetKeysFromSecret
+  - [all]test and recompile
+  
+- checkpoint 17 Dhul-Hijah 1441 H
+  - [ui][Qt] Make CoinControlTreeWidget focusable
+  - [src][Core] Prevent coinstakes from overpaying masternodes
+  - [sub][Doxygen] Generate Todo list
+  - [src][Core] Define STAKING_ADDRESS addresses
+  - [src][Script] Define OP_CHECKCOLDSTAKEVERIFY opcode behaviour
+  - [src][Core] define TX_COLDSTAKE standard and P2CS script
+  - [src][Wallet] Get ColdStaking/Delegated balance
+  - [src][RPC] define: getnewstakingaddress, delegatestake, rawdelegatestake
+  - [src][RPC/Wallet] fix IsMine filters and add option to include delegated
+  - [src][Script] Define IsPayToColdStaking() fast test
+  - [src][Script] Sign P2CS scripts
+  - [src][Wallet] Add flag 'fStakeDelegationVoided' to tx when P2PC gets spent
+  - [src][Script] Add fColdStake to ExtractDestination
+  - [src][RPC] define getcoldstakingbalance
+  - [src][Wallet] Use cold inputs to stake
+  - [src][Core] Sign block with staking key if coinstake is 'cold' stake
+  - [src][Core] add main P2CS check in CheckTransaction
+  - [src][RPC] signrawtransaction: select proper key for 'cold' inputs
+  - [src][Wallet] Add -coldstaking flag to enable/disable feature
+  - [src][Consensus] ColdStaking enforcement
+  - [src][Wallet/DB] Add Delegators-whitelist protection for cold staker
+  - [src][RPC] define: delegatoradd, delegatorremove
+  - [src][Trivial] Fix spelling in delegatorremove RPC help
+  - [src][Wallet][DB] Refactor Delegator whitelist as AddressBook entry
+  - [src][Core] Add threshold for P2CS value (hardcoded to 10 CAI)
+  - [src][Core] Init CMuBdIAddress and Visitor with base58 prefix
+  - [src][Consensus] Fix output index in CheckColdStake()
+  - [src][Wallet] Speed up ColdStaking and Delegated balance computation
+  - [src][RPC] CreateColdStakeDelegation move checks before creating address
+  - [src][Cleanup] minor styling in standard.cpp and remove fStakeDelegation
+  - [src][Script] Guard against GetPubKey() failures in Solver()
+  - [src][Script] Unify OP_CHECKCOLDSTAKEVERIFY checks
+  - [src][Tests] Additional case for Cold Staking functional test
+  - [src][Tests] Fix coldstaking functional test
+  - [src][Fix] MintableCoins include cold staking balance
+  - [src][Trivial] define GetSakingBalance and update it in miner
+  - [all]test and build
+  
+- checkpoint 18 Dhul-Hijah 1441 H
+  - [src][RPC] Define listcoldutxos function
+  - [src][RPC] listcoldutxos: fix staking addresses base58 prefix
+  - [src][DB] Fix unserialization check for cold staking txes
+  - [src][RPC] listcoldutxos: include only final, trusted, unspent coins
+  - [src][Trivial][RPC] Fix delegatoradd help text and remove extra arg fRescan
+  - [src][Wallet] don't include P2CS in SelectStakeCoins if CS is not enabled
+  - [src][RPC] define getdelegatedbalance
+  - [src][Wallet] fix IsValid and validateaddress for Staking Addresses
+  - [src][RPC] define listdelegators
+  - [src][RPC] define liststakingaddresses
+  - [src][Wallet] define GetColdStakingDebit and GetStakeDelegationDebit
+  - [src][Wallet] Add fUnspent flag to GetCredit
+  - [src][Wallet] Stop duplicating cached amount update. Single method
+  - [src][Wallet][Refactor] Inline getDebit/getCredit if else in updateAmount
+  - [src][Wallet] Add fStakeDelegation voided in-memory flag
+  - [src][Bug] Fix isMine type in GetColdStakingDebit
+  - [src][Wallet] Fix spending P2CS delegations with coin control
+  - [src][Tests] Speed up feature_coldStaking + check 'listcoldutxos'
+  - [src][Core] Add CheckColdStakeFreeOutput function
+  - [src][Core] Cold Staking: lower dust threshold to 0.1 CAI
+  - [src][Consensus] Set Cold Staking activation via SPORK
+  - [src][Core] Lower the banscore for P2CS when spork 17 disabled to 10
+  - [ui][GUI] Segfault for a bad cast of the parent widget in the escape key
+  - [all]test and build
+  - [all]bump v5.2.5 - Himeragi
+  
+- checkpoint 20 Dhul-Hijah 1441 H
+  - [ui][RPC] Define listcoldutxos function
+  - [ui][UI] Avoid calling GetDepthInMainChain from GUI
+  - [src][Wallet][Refactor] Getbalance and similar methods lambda refactored
+  - [ui]Fix AA_EnableHighDpiScaling warning
+  - [src][Wallet] Transaction IsEquivalentTo method backported
+  - [src][Node] Remove a call to IsSuperMajority
+  - [src][Wallet][RPC] Lock/UnlockCoin const argument + checks in lockunspent
+  - [src][Node] Replace IsSuperMajority with height checks
+  - [src][Wallet] Unlock spent outputs
+  - [src][Wallet] Enable miner with mnsync incomplete
+  - [src][Wallet] Do not store the cached amount if the fUnspent flag enable
+  - [src][Bug] Fix contextCheckBlock for the first block that it's a v1 block
+  - [src][Wallet][RPC] Add GetImmature ColdStaking/Delegated balance
+  - [src][Wallet] Do not use cached immature credit either when getting balance
+  - [ui][UI] Settings, options buttons hover css
+  - [ui][UI] TransactionFilter, do not invalidate the filter
+  - [all]test and build
+  - [all]bump v5.2.5.1 - Himeragi
+  - [ui][Qt] Hide option for 3rd party transaction URLs
+  - [ui][Qt] Show display unit option as text
+  - [src][Cleanup][Refactor][Performance] Main.cpp code cleanup
+  - [src][Consensus] Add placeholder block height for Time Protocol V2
+  - [src][Core] Add timestamp mask to chainparams
+  
+- checkpoint 21 Dhul-Hijah 1441 H
+  - [src][Cleanup] Remove unused function CheckCoinStakeTimestamp
+  - [src][Core] Define new Future Time Drift
+  - [src][Core] Define new Past Time Limit and enforce masked time
+  - [ui][GUI] Fix bug in change wallet passphrase
+  - [ui][GUI][Model][Performance] Instead of ask twice
+  - [src][Wallet][RPC] getNewAddress and getNewStaking address methods created
+  - [src][Trivial] Compiler warnings over the overrided methods fix
+  - [ui][GUI][Model] Cold staking connected to transactionTableModel
+  - [all][Refactor] Wallet key creation, stop throwing a runtime_error
+  - [ui][GUI][Model] Cold staking balance connected to the total balance
+  - [src][Spork] Segfault when spork value exceeds the bounds of ctime
+  - [ui][GUI][Model] Dashboard, P2CS contract transaction connected
+  - [ui][GUI] Dashboard, P2CS contract transaction inactive icon
+  - [ui][GUI] TransactionRecord representing P2CS address correctly
+  - [ui][GUI] Generate cold staking address connected
+  - [ui][GUI] ProcessSendCoinsReturn method moved to GuiTransactionsUtils
+  - [ui][Model] WalletModel P2CS transactions connected
+  - [ui][GUI] Send widget, delete dialog if it's not used anymore
+  - [ui][GUI] Cold Staking, P2CS delegation flow created
+  - [ui][GUI] Cold Staking, Owner address connected
+  - [ui][GUI] Cold staking filtering
+  - [ui][GUI][Model][Options] * Cold staking screen visible/invisible flow
+  - [ui][GUI] Dark theme icon for P2CS tx added
+  - [src][Wallet][Refactor] * AddressBookData class moved
+  - [src][Wallet][RPC][Cold Staking] `delegatorremove`
+  - [ui][WalletModel] Cold staking whitelisting and blacklisting
+  - [ui][Model] * TransactionsTableModel caching stake delegations on startup
+  - [ui][Model] Cold Staking model created
+  - [ui][GUI] Cold staking screen
+ 
+- checkpoint 22 Dhul-Hijah 1441 H
+  - [ui][GUI] receiveWidget, moving cold staking address creation to the cold staking
+  - [ui][GUI] RequestDialog requesting address label for cold staking address
+  - [ui][WalletModel] getKeyId not accepting staking addresses fixed
+  - [ui][GUI] cold staking model update list fix
+  - [ui][GUI] Cold Staking screen, white/black listing tooltip flag
+  - [ui][GUI] Cold Staking screen, delegate button margin corrected
+  - [ui][Model] * TransactionTableModel, update cachedDelegations
+  - [ui][GUI] Cold staking, update delegators list if a new p2cs tx arrives
+  - [ui][GUI] Cold staking, owner contacts on click style
+  - [ui][Model] * AddressTableModel supporting delegator and delegable address
+  - [ui][GUI] Cold staking, auto-completable contacts and delegators connected
+  - [src][Wallet] Base58, do not try to parse an empty string on SetString
+  - [ui][Model] Do not look for address label if the input address is empty
+  - [ui][GUI] * RequestDialog permitting 0 amount value staking URI creation
+  - [ui][GUI] Request dialog uri amount value set fix
+  - [ui][GUI] SendMultiRow
+  - [all][GUI][Model][Refactor] AddressBook namespace created + validateStaking
+  - [ui][GUI][Model] * ColdStaking screen, sendMultiRow only accept staking
+  - [ui][Model] WalletModel isMine address, input QString
+  - [src][AddressBook] addressbook.cpp file created
+  - [ui][GUI][Model] * P2CS records, P2CSDelegationSent type created
+  - [ui][GUI] ColdStaking screen, hide menu on mode change
+  - [ui][GUI] Transaction record bad parsed as MN reward fixed
+  - [nod][Build] ColdStaking, guiTransactionsUtils and addressbook files added cmake
+  - [ui][GUI] Cold staking nav icon style in dark theme added
+  - [all]bump v5.2.6 - Himeragi
+  
+- checkpoint 24 Dhul-Hijah 1441 H
+  - [ui][GUI] Cold staking clear all button functionality added and connected
+  - [ui][GUI] Cold staking inactive icon on txs row in dark theme added
+  - [ui][GUI] Cold staking, coin-owner cannot whitelist/blacklist staking
+  - [ui][Model] Cold staking received delegation amount using getColdStaking
+  - [src][Chain] IsOutputAvailable method created in coinsViewCache
+  - [ui][Model] TransactionTablemodel checkForDelegations
+  - [ui][Model] TransactionRecord, using GetColdStakingDebit
+  
+- checkpoint 25 Dhul-Hijah 1441 H
+  - [ui][GUI] Cold/Hot stakes tx row icon in every different form
+  - [ui][Model] Cold staking, debit amount inverted to be inline
+  - [ui][GUI] Navigation bar, receive icon invalid top padding removed
+  - [src][Coins] IsOutputAvailable badly checking if the output is available
+  - [ui][GUI][Model] * ColdStaking screen: Show/Hide empty view
+  - [ui][GUI][Model] Cold Staking whitelist/blacklist only accepting regular
+  - [ui][Model] Cold Staking model, no need to check an unused parent
+  - [ui][Model] Cached cold staking delegations, counting every p2cs record
+  - [src][Wallet] Transaction HasP2CSInputs implemented
+  - [ui][Model] TransactionRecords P2CSUnlockOwner and P2CSUnlockStaker
+  - [ui][Model] P2CS unlock, not using the input.prevPubKey anymore
+  - [ui][Model][Refactor] TransactionRecord, ExtractAddress for p2cs script
+  - [src][Wallet] GetAvailableP2CSCoins method created, returning the stakeable
+  - [ui][Model][GUI][Refactor] CachedDelegation list moved
+  
+- checkpoint 28 Dhul-Hijah 1441 H
+  - [ui][Wallet][GUI] Add warning when voiding cold-stake delegation
+  - [ui][GUI] sendConfirm dialog, labelWarning invisible if it's not set
+  - [ui][Model] Cold staking model clearing list one every refresh
+  - [src][Wallet][Refactor] HasP2CSInputs moved from CTransaction to CWalletTx
+  - [ui][Model] TransactionRecord P2CS, set only staking address
+  - [ui][Model][SQUASH] Only update staking addresses
+  - [ui][Model][SQUASH] ColdStaking model refresh list fully refactored
+  - [ui][GUI] Cold staking, owner address change label functionality added
+  - [ui][GUI] Cold staking, copy staking address button in the tooltip menu
+  - [ui][GUI] Cold staking, copy owner address instead of the staking address
+  - [src][WALLET] Cold staking address book purpose added
+  - [ui][GUI] My cold staking addresses list created and connected
+  - [ui][Model] Use ExtractDestinations to get recipients of P2CS scripts
+  - [ui][GUI] Cold staking, stakeable total amount label added and connected
+  - [all]bump v5.2.7 - Himeragi
+  
+- checkpoint 29 Dhul-Hijah 1441 H
+  - [ui][GUI] Cold staking screen, shutdown segfault over spacer freed
+  - [ui][GUI] Cold staking screen, delegations load moved from main thread
+  - [nod][Build] CMake missing addressholder file added
+  - [src][Wallet] Fix getNewAddress methods
+  - [src][Wallet] fix getNewAddress returning error with locked wallet
+  - [ui][Model][UI] isColdStakingNetworkelyEnabled method created and connect
+  - [ui][UI][Model] ColdStaking screen, my staking addresses list, menu
+  - [ui][GUI][Model] TransactionRecord, invalid cold staking delegations
+  - [src][Helpers] CBitcoinAddress, newInstance and newCSInstance method created
+  - [ui][GUI] TransactionDetailDialog, showing the cold staking addresses
+  - [src][Wallet] GetAvailableP2CSCoins improved
+  - [src][Wallet] GetAvailableP2CSCoins, a p2cs utxo is spendable
+  - [ui][GUI] MasterNodesWidget, list view mouse tracking enabled
+  - [ui][GUI][Model] Rebase fix
+  - [ui][GUI][Model] * TransactionRecord implementing isAnyColdStakingType
+  - [ui][Model] isP2CSSpend and isDelegatedToOrFromMe unused method removed
+  - [ui][GUI] Cold staking my address menu position corrected
+  - [src][Trivial] Fix help text for delegatorremove
+  - [ui][Qt] Refresh coin control when re-opening from CS widget
+  - [ui][Qt] Retain command line arguments when restarting
+  - [ui][Model][UI] Receive dialog, create an address if the addressbook
+  - [ui][Qt] Sanitize restart params when saving settings
+  - [ui][Model][Backport] Remove wallet-mapWallet call + stop treating coinbase
+  - [ui][Trivial] [GUI] Request Dialog typo fix
+  - [all]bump v5.2.8 - Himeragi
+  
+- checkpoint 2 Muharram 1441 H
+  - [src][Masterndoes] Masternodes sync, try locking cs_main
+  - [src][Wallet] Do not use p2cs outputs in the autocombine flow
+  - [ui][Qt] Don't force wallet restart on settings save
+  - [ui][Trivial] [GUI] Customize Fee Dialog text change
+  - [src][Wallet][AddressBook] Sending cold staking addresses (contacts) flow
+  - [ui][GUI][Model] Sending cold staking addresses flow fully connected
+  - [src][Spork] Guard chainActive.Tip() and chainActive.Height() methods call
+  - [ui][GUI] Cold staking screen
+  - [ui][Model[GUI] getLastUnusedMethod method name refactored
+  - [src][Masternodes] Reset mn sync process if it's sleep
+  - [ui][GUI] Dashboard navigation icon bad top padding pushing the icon
+  - [src][Refactor] IsColdStakingPurpose method removed from CAdressBookEntry
+  - [ui]gui: explicitly disable "Dark Mode" appearance on macOS
+  - [src][Core/PoS] Enforce timestamp mask in miner
+  - [src][Core] Set time granularity to 15 (instead of 16)
+  - [src][PoS] Adjust FutureBlockTimeDrift to 15 secs granularity
+  - [src][PoS] Set target spacing to 60 seconds
+  - [src][PoS] set nTargetTimespan_V2 to 15 minutes (60 time slots)
+  - [src][Core] Guard the transition to v2 time protocol in MinPastBlockTime rule
+  - [src][PoS] Keep v1 miner until hard-fork
+  - [src][Core] Make bnProofOfStakeLimit_V2 16 times v1 limit
+  - [src][PoS] reduce difficulty by a factor 16 on nBlockTimeProtocolV2
+  - [src][PoS] StakeV1: iterate the time backwards
+  - [src][PoS] Don't allow consecutive blocks within the same time slot
+  - [src][Performance] Kernel, methods using object reference instead
+  - [src][PoS] Don't use chainActive.Tip() as prevIndex when creating new blocks
+  - [src][Core] Restore CheckBlock checks before previous block check
