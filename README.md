@@ -31,6 +31,50 @@ listed nodes developement tags(nametag_install.sh).
 5. tn = testing nodes. for test nodes only.
 6. rn = rebuild nodes. easily upgraded nodes.
 
+### Coin Specs
+<table>
+<tr><td>Algo</td><td>AIRLogic</td></tr>
+<tr><td>Block Time</td><td>60 Seconds</td></tr>
+<tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>50,000 CAI</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Premine</td><td>3,400,000 CAI*</td></tr>
+</table>
+
+*3,400,000 CAI Premine was burned in block [1](null)
+
+### Reward Distribution
+
+<table>
+<th colspan=4>Genesis Block</th>
+<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
+<tr><td>1</td><td>3,400,000 CAI</td><td>Initial Pre-mine, burnt in block <a href="#">0</a></td></tr>
+</table>
+
+### PoW Rewards Breakdown
+
+<table>
+<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
+<tr><td>1-5000</td><td>50% (10000 CAI)</td><td>5% (200 CAI)</td><td>N/A</td></tr>
+</table>
+
+### PoS Rewards Breakdown
+
+<table>
+<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
+<tr><td>Phase 0</td><td>5000-10000</td><td>5 CAI</td><td>90% (CAI CAI)</td><td>10% (5 CAI)</td></tr>
+<tr><td>Phase 1</td><td>10000-50000</td><td>2.5 CAI</td><td>90% (40.5 CAI)</td><td>10% (4.5 CAI)</td></tr>
+<tr><td>Phase 2</td><td>50000-100000</td><td>1.25 CAI</td><td>90% (36 CAI)</td><td>10% (4 CAI)</td></tr>
+</table>
+
+### PoS II Rewards Breakdown
+
+<table>
+<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
+<tr><td>Phase 3</td><td>100000-500000</td><td>0.625 CAI</td><td>90% (31.5 CAI)</td><td>10% (3.5 CAI)</td></tr>
+<tr><td>Phase 4</td><td>500000-1000000</td><td>0.3125 CAI</td><td>90% (27 CAI)</td><td>10% (3 CAI)</td></tr>
+</table>
+
 # DEVELOPMENT TAGS ##
 
 tags is list for easy what we change. so make sure that arrange.
